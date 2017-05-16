@@ -1,14 +1,34 @@
-Ata reunião com a cliente Ana. 09/05/2017
+Ata de reunião dia 16/05/2017
 
-Tópicos abordados: 
+Temos que produzir um Léxico Ampliado de Linguagem
+	Noção e impacto
+	Fazer conta no c&l - se registrar na página na página http://transparencia.les.inf.puc-rio.br:8080/cel/visao/index.html 
+				e mandar o login para a Ana Moura.
 
-	Introdução ao projeto a ser desenvolvido.
-		A página do projeto pode ser acessada em https://sites.google.com/site/professoraanamoura/projetos 
-		
-		O sistema não é só pra aula e não é descartável (em seis meses).
-		
-		O projeto consiste em desenvolver uma aplicação mobile para "que seja possível localizar os estabelecimentos de saúde mais próximos".
 
-		Surgiu a ideia de dividir o desenvolvimento em back e front end, pra dividir quem entende mais de Swift e iOs e quem prefere trabalhar em outras coisas.
+	Formato:
+		Símbolo/Sinônimos
+		Noção
 
-		Deixar por último a informação de quais planos de saúde atendem onde, porque esses dados não são fornecidos pela prefeitura.
+
+Repensamos a divisão em equipes:
+	Consultar trello para ver equipes
+
+	Front-end -  
+	Back-end - 
+	Engenharia de Requisitos - 
+	
+
+
+Algumas decisões tomadas em conjunto com o cliente:
+
+- - - colocar equipes de front-end e back-end, estabelecimentos de saúde
+- Back-end deve ser otimizado para filtrar por região, etc
+- fazer desenho da arquitetura para entender a solução e comparar com os requisitos
+- pesquisa por nome e distância
+- Deixar API de planos de saúde por último
+- Trocou o google maps pelo serviço de mapas da apple
+
+
+
+Presentes: Gabriel Gomes, Renan da Fonte, Marcelo Paulon, André Mazal, Maurício, Felipe Zarattini, Pedro Alvarez, Leonardo Kaplan
