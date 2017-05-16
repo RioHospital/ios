@@ -1,0 +1,14 @@
+Ata reunião com a cliente Ana. 09/05/2017
+
+Tópicos abordados: 
+
+	Introdução ao projeto a ser desenvolvido.
+		A página do projeto pode ser acessada em https://sites.google.com/site/professoraanamoura/projetos 
+		
+		O sistema não é só pra aula e não é descartável (em seis meses).
+		
+		O projeto consiste em desenvolver uma aplicação mobile para "que seja possível localizar os estabelecimentos de saúde mais próximos".
+
+		Surgiu a ideia de dividir o desenvolvimento em back e front end, pra dividir quem entende mais de Swift e iOs e quem prefere trabalhar em outras coisas.
+
+		Deixar por último a informação de quais planos de saúde atendem onde, porque esses dados não são fornecidos pela prefeitura.
