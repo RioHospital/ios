@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0661ECB133100BC62A3 /* AppDelegate.swift */; };
+		C02FB0691ECB133100BC62A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0681ECB133100BC62A3 /* ViewController.swift */; };
+		C02FB06C1ECB133100BC62A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB06A1ECB133100BC62A3 /* Main.storyboard */; };
+		C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C02FB06D1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld */; };
+		C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0701ECB133100BC62A3 /* Assets.xcassets */; };
+		C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */; };
+		C02FB07F1ECB133100BC62A3 /* Rio_HospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB07E1ECB133100BC62A3 /* Rio_HospitalTests.swift */; };
+		C02FB08A1ECB133200BC62A3 /* Rio_HospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C02FB07B1ECB133100BC62A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C02FB05B1ECB133100BC62A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C02FB0621ECB133100BC62A3;
+			remoteInfo = "Rio Hospital";
+		};
+		C02FB0861ECB133100BC62A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C02FB05B1ECB133100BC62A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C02FB0621ECB133100BC62A3;
+			remoteInfo = "Rio Hospital";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C02FB0631ECB133100BC62A3 /* Rio Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rio Hospital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02FB0661ECB133100BC62A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C02FB0681ECB133100BC62A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C02FB06B1ECB133100BC62A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C02FB06E1ECB133100BC62A3 /* Rio_Hospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rio_Hospital.xcdatamodel; sourceTree = "<group>"; };
+		C02FB0701ECB133100BC62A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C02FB0731ECB133100BC62A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C02FB0751ECB133100BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02FB07A1ECB133100BC62A3 /* Rio HospitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rio HospitalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02FB07E1ECB133100BC62A3 /* Rio_HospitalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rio_HospitalTests.swift; sourceTree = "<group>"; };
+		C02FB0801ECB133100BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02FB0851ECB133100BC62A3 /* Rio HospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rio HospitalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rio_HospitalUITests.swift; sourceTree = "<group>"; };
+		C02FB08B1ECB133200BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C02FB0601ECB133100BC62A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02FB0771ECB133100BC62A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02FB0821ECB133100BC62A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C02FB05A1ECB133100BC62A3 = {
+			isa = PBXGroup;
+			children = (
+				C02FB0651ECB133100BC62A3 /* Rio Hospital */,
+				C02FB07D1ECB133100BC62A3 /* Rio HospitalTests */,
+				C02FB0881ECB133200BC62A3 /* Rio HospitalUITests */,
+				C02FB0641ECB133100BC62A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C02FB0641ECB133100BC62A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C02FB0631ECB133100BC62A3 /* Rio Hospital.app */,
+				C02FB07A1ECB133100BC62A3 /* Rio HospitalTests.xctest */,
+				C02FB0851ECB133100BC62A3 /* Rio HospitalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C02FB0651ECB133100BC62A3 /* Rio Hospital */ = {
+			isa = PBXGroup;
+			children = (
+				C02FB0661ECB133100BC62A3 /* AppDelegate.swift */,
+				C02FB0681ECB133100BC62A3 /* ViewController.swift */,
+				C02FB06A1ECB133100BC62A3 /* Main.storyboard */,
+				C02FB0701ECB133100BC62A3 /* Assets.xcassets */,
+				C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */,
+				C02FB0751ECB133100BC62A3 /* Info.plist */,
+				C02FB06D1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld */,
+			);
+			path = "Rio Hospital";
+			sourceTree = "<group>";
+		};
+		C02FB07D1ECB133100BC62A3 /* Rio HospitalTests */ = {
+			isa = PBXGroup;
+			children = (
+				C02FB07E1ECB133100BC62A3 /* Rio_HospitalTests.swift */,
+				C02FB0801ECB133100BC62A3 /* Info.plist */,
+			);
+			path = "Rio HospitalTests";
+			sourceTree = "<group>";
+		};
+		C02FB0881ECB133200BC62A3 /* Rio HospitalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */,
+				C02FB08B1ECB133200BC62A3 /* Info.plist */,
+			);
+			path = "Rio HospitalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C02FB0621ECB133100BC62A3 /* Rio Hospital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02FB08E1ECB133200BC62A3 /* Build configuration list for PBXNativeTarget "Rio Hospital" */;
+			buildPhases = (
+				C02FB05F1ECB133100BC62A3 /* Sources */,
+				C02FB0601ECB133100BC62A3 /* Frameworks */,
+				C02FB0611ECB133100BC62A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rio Hospital";
+			productName = "Rio Hospital";
+			productReference = C02FB0631ECB133100BC62A3 /* Rio Hospital.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C02FB0791ECB133100BC62A3 /* Rio HospitalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02FB0911ECB133200BC62A3 /* Build configuration list for PBXNativeTarget "Rio HospitalTests" */;
+			buildPhases = (
+				C02FB0761ECB133100BC62A3 /* Sources */,
+				C02FB0771ECB133100BC62A3 /* Frameworks */,
+				C02FB0781ECB133100BC62A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C02FB07C1ECB133100BC62A3 /* PBXTargetDependency */,
+			);
+			name = "Rio HospitalTests";
+			productName = "Rio HospitalTests";
+			productReference = C02FB07A1ECB133100BC62A3 /* Rio HospitalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C02FB0841ECB133100BC62A3 /* Rio HospitalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02FB0941ECB133200BC62A3 /* Build configuration list for PBXNativeTarget "Rio HospitalUITests" */;
+			buildPhases = (
+				C02FB0811ECB133100BC62A3 /* Sources */,
+				C02FB0821ECB133100BC62A3 /* Frameworks */,
+				C02FB0831ECB133100BC62A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C02FB0871ECB133100BC62A3 /* PBXTargetDependency */,
+			);
+			name = "Rio HospitalUITests";
+			productName = "Rio HospitalUITests";
+			productReference = C02FB0851ECB133100BC62A3 /* Rio HospitalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C02FB05B1ECB133100BC62A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Gabriel Gomes";
+				TargetAttributes = {
+					C02FB0621ECB133100BC62A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2WPG2PXX6C;
+						ProvisioningStyle = Automatic;
+					};
+					C02FB0791ECB133100BC62A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2WPG2PXX6C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C02FB0621ECB133100BC62A3;
+					};
+					C02FB0841ECB133100BC62A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2WPG2PXX6C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C02FB0621ECB133100BC62A3;
+					};
+				};
+			};
+			buildConfigurationList = C02FB05E1ECB133100BC62A3 /* Build configuration list for PBXProject "Rio Hospital" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C02FB05A1ECB133100BC62A3;
+			productRefGroup = C02FB0641ECB133100BC62A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C02FB0621ECB133100BC62A3 /* Rio Hospital */,
+				C02FB0791ECB133100BC62A3 /* Rio HospitalTests */,
+				C02FB0841ECB133100BC62A3 /* Rio HospitalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C02FB0611ECB133100BC62A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */,
+				C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */,
+				C02FB06C1ECB133100BC62A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02FB0781ECB133100BC62A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02FB0831ECB133100BC62A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C02FB05F1ECB133100BC62A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02FB0691ECB133100BC62A3 /* ViewController.swift in Sources */,
+				C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */,
+				C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02FB0761ECB133100BC62A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02FB07F1ECB133100BC62A3 /* Rio_HospitalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02FB0811ECB133100BC62A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02FB08A1ECB133200BC62A3 /* Rio_HospitalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C02FB07C1ECB133100BC62A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C02FB0621ECB133100BC62A3 /* Rio Hospital */;
+			targetProxy = C02FB07B1ECB133100BC62A3 /* PBXContainerItemProxy */;
+		};
+		C02FB0871ECB133100BC62A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C02FB0621ECB133100BC62A3 /* Rio Hospital */;
+			targetProxy = C02FB0861ECB133100BC62A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C02FB06A1ECB133100BC62A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C02FB06B1ECB133100BC62A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C02FB0731ECB133100BC62A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C02FB08C1ECB133200BC62A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C02FB08D1ECB133200BC62A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C02FB08F1ECB133200BC62A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2WPG2PXX6C;
+				INFOPLIST_FILE = "Rio Hospital/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gdev.Rio-Hospital";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C02FB0901ECB133200BC62A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2WPG2PXX6C;
+				INFOPLIST_FILE = "Rio Hospital/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gdev.Rio-Hospital";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C02FB0921ECB133200BC62A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2WPG2PXX6C;
+				INFOPLIST_FILE = "Rio HospitalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gdev.Rio-HospitalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rio Hospital.app/Rio Hospital";
+			};
+			name = Debug;
+		};
+		C02FB0931ECB133200BC62A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2WPG2PXX6C;
+				INFOPLIST_FILE = "Rio HospitalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gdev.Rio-HospitalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rio Hospital.app/Rio Hospital";
+			};
+			name = Release;
+		};
+		C02FB0951ECB133200BC62A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2WPG2PXX6C;
+				INFOPLIST_FILE = "Rio HospitalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gdev.Rio-HospitalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Rio Hospital";
+			};
+			name = Debug;
+		};
+		C02FB0961ECB133200BC62A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2WPG2PXX6C;
+				INFOPLIST_FILE = "Rio HospitalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gdev.Rio-HospitalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Rio Hospital";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C02FB05E1ECB133100BC62A3 /* Build configuration list for PBXProject "Rio Hospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02FB08C1ECB133200BC62A3 /* Debug */,
+				C02FB08D1ECB133200BC62A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02FB08E1ECB133200BC62A3 /* Build configuration list for PBXNativeTarget "Rio Hospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02FB08F1ECB133200BC62A3 /* Debug */,
+				C02FB0901ECB133200BC62A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C02FB0911ECB133200BC62A3 /* Build configuration list for PBXNativeTarget "Rio HospitalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02FB0921ECB133200BC62A3 /* Debug */,
+				C02FB0931ECB133200BC62A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C02FB0941ECB133200BC62A3 /* Build configuration list for PBXNativeTarget "Rio HospitalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02FB0951ECB133200BC62A3 /* Debug */,
+				C02FB0961ECB133200BC62A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C02FB06D1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C02FB06E1ECB133100BC62A3 /* Rio_Hospital.xcdatamodel */,
+			);
+			currentVersion = C02FB06E1ECB133100BC62A3 /* Rio_Hospital.xcdatamodel */;
+			path = Rio_Hospital.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C02FB05B1ECB133100BC62A3 /* Project object */;
+}
