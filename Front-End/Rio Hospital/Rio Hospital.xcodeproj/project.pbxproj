@@ -99,6 +99,10 @@
 		C02FB0651ECB133100BC62A3 /* Rio Hospital */ = {
 			isa = PBXGroup;
 			children = (
+				C02FB09A1ED453FD00BC62A3 /* Resources */,
+				C02FB0971ED453A200BC62A3 /* Model */,
+				C02FB0981ED453A900BC62A3 /* View */,
+				C02FB0991ED453AF00BC62A3 /* Controller */,
 				C02FB0661ECB133100BC62A3 /* AppDelegate.swift */,
 				C02FB0681ECB133100BC62A3 /* ViewController.swift */,
 				C02FB06A1ECB133100BC62A3 /* Main.storyboard */,
@@ -126,6 +130,34 @@
 				C02FB08B1ECB133200BC62A3 /* Info.plist */,
 			);
 			path = "Rio HospitalUITests";
+			sourceTree = "<group>";
+		};
+		C02FB0971ED453A200BC62A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C02FB0981ED453A900BC62A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C02FB0991ED453AF00BC62A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C02FB09A1ED453FD00BC62A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +550,7 @@
 				C02FB0901ECB133200BC62A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C02FB0911ECB133200BC62A3 /* Build configuration list for PBXNativeTarget "Rio HospitalTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +559,7 @@
 				C02FB0931ECB133200BC62A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C02FB0941ECB133200BC62A3 /* Build configuration list for PBXNativeTarget "Rio HospitalUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +568,7 @@
 				C02FB0961ECB133200BC62A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
