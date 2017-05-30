@@ -13,9 +13,9 @@
 		C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */; };
 		C02FB07F1ECB133100BC62A3 /* Rio_HospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB07E1ECB133100BC62A3 /* Rio_HospitalTests.swift */; };
 		C02FB08A1ECB133200BC62A3 /* Rio_HospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */; };
-		C02FB09D1EDD7C7200BC62A3 /* LocationRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB09B1EDD7C7200BC62A3 /* LocationRequestView.swift */; };
-		C02FB09E1EDD7C7200BC62A3 /* LocationRequestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02FB09C1EDD7C7200BC62A3 /* LocationRequestView.xib */; };
 		C02FB0A01EDD82D500BC62A3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */; };
+		C09BC21A1EDD91580063875B /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BC2181EDD91580063875B /* LocationRequest.swift */; };
+		C09BC21B1EDD91580063875B /* LocationRequest.xib in Resources */ = {isa = PBXBuildFile; fileRef = C09BC2191EDD91580063875B /* LocationRequest.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +48,9 @@
 		C02FB0851ECB133100BC62A3 /* Rio HospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rio HospitalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rio_HospitalUITests.swift; sourceTree = "<group>"; };
 		C02FB08B1ECB133200BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C02FB09B1EDD7C7200BC62A3 /* LocationRequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationRequestView.swift; path = View/LocationRequestView.swift; sourceTree = "<group>"; };
-		C02FB09C1EDD7C7200BC62A3 /* LocationRequestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationRequestView.xib; path = View/LocationRequestView.xib; sourceTree = "<group>"; };
 		C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Resources/LocationManager.swift; sourceTree = "<group>"; };
+		C09BC2181EDD91580063875B /* LocationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationRequest.swift; path = Controller/LocationRequest.swift; sourceTree = "<group>"; };
+		C09BC2191EDD91580063875B /* LocationRequest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationRequest.xib; path = View/LocationRequest.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,7 @@
 		C02FB0981ED453A900BC62A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C02FB09C1EDD7C7200BC62A3 /* LocationRequestView.xib */,
-				C02FB09B1EDD7C7200BC62A3 /* LocationRequestView.swift */,
+				C09BC2191EDD91580063875B /* LocationRequest.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -151,6 +150,7 @@
 		C02FB0991ED453AF00BC62A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C09BC2181EDD91580063875B /* LocationRequest.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */,
-				C02FB09E1EDD7C7200BC62A3 /* LocationRequestView.xib in Resources */,
+				C09BC21B1EDD91580063875B /* LocationRequest.xib in Resources */,
 				C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,8 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02FB0A01EDD82D500BC62A3 /* LocationManager.swift in Sources */,
-				C02FB09D1EDD7C7200BC62A3 /* LocationRequestView.swift in Sources */,
 				C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */,
+				C09BC21A1EDD91580063875B /* LocationRequest.swift in Sources */,
 				C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

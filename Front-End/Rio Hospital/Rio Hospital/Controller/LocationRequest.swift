@@ -1,5 +1,5 @@
 //
-//  LocationRequestView.swift
+//  LocationRequest.swift
 //  Rio Hospital
 //
 //  Created by Gabriel Gomes on 30/05/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationRequestView: UIViewController {
+class LocationRequest: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

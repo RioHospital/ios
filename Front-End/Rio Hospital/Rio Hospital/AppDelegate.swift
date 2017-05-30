@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		self.window?.backgroundColor = UIColor.black
 		self.window?.makeKeyAndVisible()
 		
-		// Setup our initialViewController
-		self.window?.rootViewController = LocationRequestView()
+		// Setup initialViewController
+		self.window?.rootViewController = LocationRequest()
 		
 		return true
 	}
