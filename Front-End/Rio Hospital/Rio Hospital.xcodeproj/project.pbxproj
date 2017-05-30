@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0661ECB133100BC62A3 /* AppDelegate.swift */; };
-		C02FB0691ECB133100BC62A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0681ECB133100BC62A3 /* ViewController.swift */; };
-		C02FB06C1ECB133100BC62A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB06A1ECB133100BC62A3 /* Main.storyboard */; };
 		C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C02FB06D1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld */; };
 		C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0701ECB133100BC62A3 /* Assets.xcassets */; };
 		C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */; };
@@ -17,6 +15,7 @@
 		C02FB08A1ECB133200BC62A3 /* Rio_HospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */; };
 		C02FB09D1EDD7C7200BC62A3 /* LocationRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB09B1EDD7C7200BC62A3 /* LocationRequestView.swift */; };
 		C02FB09E1EDD7C7200BC62A3 /* LocationRequestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02FB09C1EDD7C7200BC62A3 /* LocationRequestView.xib */; };
+		C02FB0A01EDD82D500BC62A3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 /* Begin PBXFileReference section */
 		C02FB0631ECB133100BC62A3 /* Rio Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rio Hospital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02FB0661ECB133100BC62A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C02FB0681ECB133100BC62A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C02FB06B1ECB133100BC62A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C02FB06E1ECB133100BC62A3 /* Rio_Hospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rio_Hospital.xcdatamodel; sourceTree = "<group>"; };
 		C02FB0701ECB133100BC62A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C02FB0731ECB133100BC62A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +50,7 @@
 		C02FB08B1ECB133200BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02FB09B1EDD7C7200BC62A3 /* LocationRequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationRequestView.swift; path = View/LocationRequestView.swift; sourceTree = "<group>"; };
 		C02FB09C1EDD7C7200BC62A3 /* LocationRequestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationRequestView.xib; path = View/LocationRequestView.xib; sourceTree = "<group>"; };
+		C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Resources/LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +106,6 @@
 				C02FB0981ED453A900BC62A3 /* View */,
 				C02FB0991ED453AF00BC62A3 /* Controller */,
 				C02FB0661ECB133100BC62A3 /* AppDelegate.swift */,
-				C02FB0681ECB133100BC62A3 /* ViewController.swift */,
-				C02FB06A1ECB133100BC62A3 /* Main.storyboard */,
 				C02FB0701ECB133100BC62A3 /* Assets.xcassets */,
 				C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */,
 				C02FB0751ECB133100BC62A3 /* Info.plist */,
@@ -162,6 +158,7 @@
 		C02FB09A1ED453FD00BC62A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 				C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */,
 				C02FB09E1EDD7C7200BC62A3 /* LocationRequestView.xib in Resources */,
 				C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */,
-				C02FB06C1ECB133100BC62A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02FB0691ECB133100BC62A3 /* ViewController.swift in Sources */,
+				C02FB0A01EDD82D500BC62A3 /* LocationManager.swift in Sources */,
 				C02FB09D1EDD7C7200BC62A3 /* LocationRequestView.swift in Sources */,
 				C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */,
 				C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */,
@@ -343,14 +339,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C02FB06A1ECB133100BC62A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C02FB06B1ECB133100BC62A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
