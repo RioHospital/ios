@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75CD701D1EE6C13500614B02 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD701C1EE6C13500614B02 /* Repository.swift */; };
+		75CD701F1EE6C21A00614B02 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD701E1EE6C21A00614B02 /* Hospital.swift */; };
+		75CD70211EE6C2AE00614B02 /* InsurancePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD70201EE6C2AE00614B02 /* InsurancePlan.swift */; };
 		C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0661ECB133100BC62A3 /* AppDelegate.swift */; };
 		C02FB0691ECB133100BC62A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0681ECB133100BC62A3 /* ViewController.swift */; };
 		C02FB06C1ECB133100BC62A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB06A1ECB133100BC62A3 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75CD701C1EE6C13500614B02 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Model/Repository.swift; sourceTree = "<group>"; };
+		75CD701E1EE6C21A00614B02 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hospital.swift; path = Model/Hospital.swift; sourceTree = "<group>"; };
+		75CD70201EE6C2AE00614B02 /* InsurancePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsurancePlan.swift; path = Model/InsurancePlan.swift; sourceTree = "<group>"; };
 		C02FB0631ECB133100BC62A3 /* Rio Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rio Hospital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02FB0661ECB133100BC62A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C02FB0681ECB133100BC62A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 		C02FB0971ED453A200BC62A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				75CD701C1EE6C13500614B02 /* Repository.swift */,
+				75CD701E1EE6C21A00614B02 /* Hospital.swift */,
+				75CD70201EE6C2AE00614B02 /* InsurancePlan.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -304,10 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CD70211EE6C2AE00614B02 /* InsurancePlan.swift in Sources */,
 				C02FB0691ECB133100BC62A3 /* ViewController.swift in Sources */,
 				C02FB09D1EDD7C7200BC62A3 /* LocationRequestView.swift in Sources */,
+				75CD701D1EE6C13500614B02 /* Repository.swift in Sources */,
 				C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */,
 				C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */,
+				75CD701F1EE6C21A00614B02 /* Hospital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
