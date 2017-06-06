@@ -6,7 +6,7 @@
 //  Copyright © 2017 Gabriel Gomes. All rights reserved.
 //
 
-// Holds basic data from the insurance plan entity
+/// Holds basic data from the insurance plan entity
 class InsurancePlan {
     let id: UInt
     

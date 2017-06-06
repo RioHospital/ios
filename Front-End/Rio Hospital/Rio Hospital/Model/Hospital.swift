@@ -6,7 +6,7 @@
 //  Copyright © 2017 Gabriel Gomes. All rights reserved.
 //
 
-// Holds basic data from the hospital entity
+/// Holds basic data from the hospital entity
 class Hospital {
     let name: String
     
