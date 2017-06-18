@@ -29,11 +29,12 @@ extension LocationRequest: LocationManagerDelegate {
     func locationManager(didUpdateLocation location: CLLocation) {
         // TODO
     }
-
 	
 	func locationManagerDidChangeAuthorizationStatus() {
 		if LocationManager.shared.isLocationPermissionGranted {
-			self.present(Map(), animated: true, completion: nil)
+			
+			let navigationController = UINavigationController(rootViewController: Map())
+			self.present(navigationController, animated: true, completion: nil)
 		}
 	}
 }
