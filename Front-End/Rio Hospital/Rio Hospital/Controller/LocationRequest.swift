@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class LocationRequest: UIViewController {
 
@@ -25,6 +26,10 @@ class LocationRequest: UIViewController {
 }
 
 extension LocationRequest: LocationManagerDelegate {
+    func locationManager(didUpdateLocation location: CLLocation) {
+        // TODO
+    }
+
 	
 	func locationManagerDidChangeAuthorizationStatus() {
 		if LocationManager.shared.isLocationPermissionGranted {

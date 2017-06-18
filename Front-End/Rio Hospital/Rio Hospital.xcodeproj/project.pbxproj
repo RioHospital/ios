@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		754BBEDE1EF60C70002F6D56 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754BBED11EF60BF5002F6D56 /* Alamofire.framework */; };
+		754BBEDF1EF60C70002F6D56 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 754BBED11EF60BF5002F6D56 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75CD701D1EE6C13500614B02 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD701C1EE6C13500614B02 /* Repository.swift */; };
 		75CD701F1EE6C21A00614B02 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD701E1EE6C21A00614B02 /* Hospital.swift */; };
 		75CD70211EE6C2AE00614B02 /* InsurancePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD70201EE6C2AE00614B02 /* InsurancePlan.swift */; };
+		75F05BF41EF60DFB0004B6C9 /* RioHospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F05BF31EF60DFB0004B6C9 /* RioHospitalTests.swift */; };
 		C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0661ECB133100BC62A3 /* AppDelegate.swift */; };
 		C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C02FB06D1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld */; };
 		C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0701ECB133100BC62A3 /* Assets.xcassets */; };
 		C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */; };
-		C02FB07F1ECB133100BC62A3 /* Rio_HospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB07E1ECB133100BC62A3 /* Rio_HospitalTests.swift */; };
 		C02FB08A1ECB133200BC62A3 /* Rio_HospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */; };
 		C02FB0A01EDD82D500BC62A3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */; };
 		C09BC21A1EDD91580063875B /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BC2181EDD91580063875B /* LocationRequest.swift */; };
@@ -24,6 +26,62 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		754BBED01EF60BF5002F6D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		754BBED21EF60BF5002F6D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		754BBED41EF60BF5002F6D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		754BBED61EF60BF5002F6D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		754BBED81EF60BF5002F6D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		754BBEDA1EF60BF5002F6D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		754BBEDC1EF60BF5002F6D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		754BBEE01EF60C70002F6D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		C02FB07B1ECB133100BC62A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C02FB05B1ECB133100BC62A3 /* Project object */;
@@ -40,10 +98,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		754BBEE21EF60C70002F6D56 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				754BBEDF1EF60C70002F6D56 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		75CD701C1EE6C13500614B02 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Model/Repository.swift; sourceTree = "<group>"; };
 		75CD701E1EE6C21A00614B02 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hospital.swift; path = Model/Hospital.swift; sourceTree = "<group>"; };
 		75CD70201EE6C2AE00614B02 /* InsurancePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsurancePlan.swift; path = Model/InsurancePlan.swift; sourceTree = "<group>"; };
+		75F05BF31EF60DFB0004B6C9 /* RioHospitalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RioHospitalTests.swift; sourceTree = "<group>"; };
 		C02FB0631ECB133100BC62A3 /* Rio Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rio Hospital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02FB0661ECB133100BC62A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C02FB06E1ECB133100BC62A3 /* Rio_Hospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rio_Hospital.xcdatamodel; sourceTree = "<group>"; };
@@ -51,7 +125,6 @@
 		C02FB0731ECB133100BC62A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C02FB0751ECB133100BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02FB07A1ECB133100BC62A3 /* Rio HospitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rio HospitalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C02FB07E1ECB133100BC62A3 /* Rio_HospitalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rio_HospitalTests.swift; sourceTree = "<group>"; };
 		C02FB0801ECB133100BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02FB0851ECB133100BC62A3 /* Rio HospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rio HospitalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rio_HospitalUITests.swift; sourceTree = "<group>"; };
@@ -68,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754BBEDE1EF60C70002F6D56 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +162,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		754BBEC61EF60BF5002F6D56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				754BBED11EF60BF5002F6D56 /* Alamofire.framework */,
+				754BBED31EF60BF5002F6D56 /* Alamofire iOS Tests.xctest */,
+				754BBED51EF60BF5002F6D56 /* Alamofire.framework */,
+				754BBED71EF60BF5002F6D56 /* Alamofire macOS Tests.xctest */,
+				754BBED91EF60BF5002F6D56 /* Alamofire.framework */,
+				754BBEDB1EF60BF5002F6D56 /* Alamofire tvOS Tests.xctest */,
+				754BBEDD1EF60BF5002F6D56 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C02FB05A1ECB133100BC62A3 = {
 			isa = PBXGroup;
 			children = (
+				754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */,
 				C02FB0651ECB133100BC62A3 /* Rio Hospital */,
 				C02FB07D1ECB133100BC62A3 /* Rio HospitalTests */,
 				C02FB0881ECB133200BC62A3 /* Rio HospitalUITests */,
@@ -127,7 +216,7 @@
 		C02FB07D1ECB133100BC62A3 /* Rio HospitalTests */ = {
 			isa = PBXGroup;
 			children = (
-				C02FB07E1ECB133100BC62A3 /* Rio_HospitalTests.swift */,
+				75F05BF31EF60DFB0004B6C9 /* RioHospitalTests.swift */,
 				C02FB0801ECB133100BC62A3 /* Info.plist */,
 			);
 			path = "Rio HospitalTests";
@@ -188,10 +277,12 @@
 				C02FB05F1ECB133100BC62A3 /* Sources */,
 				C02FB0601ECB133100BC62A3 /* Frameworks */,
 				C02FB0611ECB133100BC62A3 /* Resources */,
+				754BBEE21EF60C70002F6D56 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				754BBEE11EF60C70002F6D56 /* PBXTargetDependency */,
 			);
 			name = "Rio Hospital";
 			productName = "Rio Hospital";
@@ -252,6 +343,7 @@
 					C02FB0791ECB133100BC62A3 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 2WPG2PXX6C;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C02FB0621ECB133100BC62A3;
 					};
@@ -274,6 +366,12 @@
 			mainGroup = C02FB05A1ECB133100BC62A3;
 			productRefGroup = C02FB0641ECB133100BC62A3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 754BBEC61EF60BF5002F6D56 /* Products */;
+					ProjectRef = 754BBEC51EF60BF5002F6D56 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C02FB0621ECB133100BC62A3 /* Rio Hospital */,
@@ -282,6 +380,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		754BBED11EF60BF5002F6D56 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 754BBED01EF60BF5002F6D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		754BBED31EF60BF5002F6D56 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 754BBED21EF60BF5002F6D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		754BBED51EF60BF5002F6D56 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 754BBED41EF60BF5002F6D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		754BBED71EF60BF5002F6D56 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 754BBED61EF60BF5002F6D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		754BBED91EF60BF5002F6D56 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 754BBED81EF60BF5002F6D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		754BBEDB1EF60BF5002F6D56 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 754BBEDA1EF60BF5002F6D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		754BBEDD1EF60BF5002F6D56 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 754BBEDC1EF60BF5002F6D56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C02FB0611ECB133100BC62A3 /* Resources */ = {
@@ -331,7 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02FB07F1ECB133100BC62A3 /* Rio_HospitalTests.swift in Sources */,
+				75F05BF41EF60DFB0004B6C9 /* RioHospitalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +496,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		754BBEE11EF60C70002F6D56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 754BBEE01EF60C70002F6D56 /* PBXContainerItemProxy */;
+		};
 		C02FB07C1ECB133100BC62A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C02FB0621ECB133100BC62A3 /* Rio Hospital */;
@@ -466,6 +621,7 @@
 		C02FB08F1ECB133200BC62A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2WPG2PXX6C;
 				INFOPLIST_FILE = "Rio Hospital/Info.plist";
@@ -479,6 +635,7 @@
 		C02FB0901ECB133200BC62A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2WPG2PXX6C;
 				INFOPLIST_FILE = "Rio Hospital/Info.plist";
@@ -494,11 +651,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2WPG2PXX6C;
 				INFOPLIST_FILE = "Rio HospitalTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gdev.Rio-HospitalTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rio Hospital.app/Rio Hospital";
 			};
@@ -509,6 +668,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2WPG2PXX6C;
 				INFOPLIST_FILE = "Rio HospitalTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

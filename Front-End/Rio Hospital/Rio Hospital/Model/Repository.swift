@@ -6,6 +6,8 @@
 //  Copyright © 2017 Gabriel Gomes. All rights reserved.
 //
 
+import Alamofire
+
 /**
  A basic interface to define methods that will be used when requesting data
  from the API.
@@ -71,7 +73,7 @@ class RepositoryImplementation: Repository {
     let baseURL = "https://riohospital.herokuapp.com/"
     
     func getHospitals(callback: ([Hospital]?) -> Void) {
-        // TODO
+        Alamofire.request("https://httpbin.org/get")
     }
     
     func getInsurancePlans(callback: ([InsurancePlan]?) -> Void) {

@@ -1,16 +1,14 @@
 //
-//  Rio_HospitalTests.swift
-//  Rio HospitalTests
+//  RioHospitalTests.swift
+//  Rio Hospital
 //
-//  Created by Gabriel Gomes on 16/05/17.
+//  Created by Renan Almeida on 17/06/17.
 //  Copyright © 2017 Gabriel Gomes. All rights reserved.
 //
 
 import XCTest
-@testable import Rio_Hospital
 
-class Rio_HospitalTests: XCTestCase {
-    
+class RioHospitalTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
