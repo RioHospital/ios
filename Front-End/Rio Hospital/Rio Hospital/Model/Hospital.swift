@@ -20,6 +20,7 @@ class Hospital {
     
     let coordinates: (latitude: Double, longitude: Double)
     
+    // Constructor
     init(name: String, address: String, neighborhood: String,
          postalCode: String, phone: String, latitude: Double,
          longitude: Double) {
