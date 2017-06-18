@@ -20,10 +20,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wD-YP-pfV">
-                    <rect key="frame" x="141" y="523" width="92" height="81"/>
+                    <rect key="frame" x="141" y="523" width="92" height="92"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="81" id="B0J-M9-2P0"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="GDu-VP-9Vr"/>
                         <constraint firstAttribute="width" constant="92" id="TNh-5i-Luj"/>
+                        <constraint firstAttribute="height" constant="92" id="bzk-Yy-KkT"/>
                     </constraints>
                     <state key="normal" image="location">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
