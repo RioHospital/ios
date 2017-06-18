@@ -11,15 +11,16 @@
 		75CD701F1EE6C21A00614B02 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD701E1EE6C21A00614B02 /* Hospital.swift */; };
 		75CD70211EE6C2AE00614B02 /* InsurancePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD70201EE6C2AE00614B02 /* InsurancePlan.swift */; };
 		C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0661ECB133100BC62A3 /* AppDelegate.swift */; };
-		C02FB0691ECB133100BC62A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0681ECB133100BC62A3 /* ViewController.swift */; };
-		C02FB06C1ECB133100BC62A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB06A1ECB133100BC62A3 /* Main.storyboard */; };
 		C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C02FB06D1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld */; };
 		C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0701ECB133100BC62A3 /* Assets.xcassets */; };
 		C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */; };
 		C02FB07F1ECB133100BC62A3 /* Rio_HospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB07E1ECB133100BC62A3 /* Rio_HospitalTests.swift */; };
 		C02FB08A1ECB133200BC62A3 /* Rio_HospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */; };
-		C02FB09D1EDD7C7200BC62A3 /* LocationRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB09B1EDD7C7200BC62A3 /* LocationRequestView.swift */; };
-		C02FB09E1EDD7C7200BC62A3 /* LocationRequestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02FB09C1EDD7C7200BC62A3 /* LocationRequestView.xib */; };
+		C02FB0A01EDD82D500BC62A3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */; };
+		C09BC21A1EDD91580063875B /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BC2181EDD91580063875B /* LocationRequest.swift */; };
+		C09BC21B1EDD91580063875B /* LocationRequest.xib in Resources */ = {isa = PBXBuildFile; fileRef = C09BC2191EDD91580063875B /* LocationRequest.xib */; };
+		C0B4587E1EE6CD9500A7C92E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4587C1EE6CD9500A7C92E /* Map.swift */; };
+		C0B4587F1EE6CD9500A7C92E /* Map.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0B4587D1EE6CD9500A7C92E /* Map.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +46,6 @@
 		75CD70201EE6C2AE00614B02 /* InsurancePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsurancePlan.swift; path = Model/InsurancePlan.swift; sourceTree = "<group>"; };
 		C02FB0631ECB133100BC62A3 /* Rio Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rio Hospital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02FB0661ECB133100BC62A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C02FB0681ECB133100BC62A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C02FB06B1ECB133100BC62A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C02FB06E1ECB133100BC62A3 /* Rio_Hospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rio_Hospital.xcdatamodel; sourceTree = "<group>"; };
 		C02FB0701ECB133100BC62A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C02FB0731ECB133100BC62A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +56,11 @@
 		C02FB0851ECB133100BC62A3 /* Rio HospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rio HospitalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rio_HospitalUITests.swift; sourceTree = "<group>"; };
 		C02FB08B1ECB133200BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C02FB09B1EDD7C7200BC62A3 /* LocationRequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationRequestView.swift; path = View/LocationRequestView.swift; sourceTree = "<group>"; };
-		C02FB09C1EDD7C7200BC62A3 /* LocationRequestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationRequestView.xib; path = View/LocationRequestView.xib; sourceTree = "<group>"; };
+		C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Resources/LocationManager.swift; sourceTree = "<group>"; };
+		C09BC2181EDD91580063875B /* LocationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationRequest.swift; path = Controller/LocationRequest.swift; sourceTree = "<group>"; };
+		C09BC2191EDD91580063875B /* LocationRequest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationRequest.xib; path = View/LocationRequest.xib; sourceTree = "<group>"; };
+		C0B4587C1EE6CD9500A7C92E /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Controller/Map.swift; sourceTree = "<group>"; };
+		C0B4587D1EE6CD9500A7C92E /* Map.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Map.xib; path = View/Map.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +116,6 @@
 				C02FB0981ED453A900BC62A3 /* View */,
 				C02FB0991ED453AF00BC62A3 /* Controller */,
 				C02FB0661ECB133100BC62A3 /* AppDelegate.swift */,
-				C02FB0681ECB133100BC62A3 /* ViewController.swift */,
-				C02FB06A1ECB133100BC62A3 /* Main.storyboard */,
 				C02FB0701ECB133100BC62A3 /* Assets.xcassets */,
 				C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */,
 				C02FB0751ECB133100BC62A3 /* Info.plist */,
@@ -155,8 +155,8 @@
 		C02FB0981ED453A900BC62A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C02FB09C1EDD7C7200BC62A3 /* LocationRequestView.xib */,
-				C02FB09B1EDD7C7200BC62A3 /* LocationRequestView.swift */,
+				C09BC2191EDD91580063875B /* LocationRequest.xib */,
+				C0B4587D1EE6CD9500A7C92E /* Map.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -164,6 +164,8 @@
 		C02FB0991ED453AF00BC62A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C0B4587C1EE6CD9500A7C92E /* Map.swift */,
+				C09BC2181EDD91580063875B /* LocationRequest.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -171,6 +173,7 @@
 		C02FB09A1ED453FD00BC62A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -286,9 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */,
-				C02FB09E1EDD7C7200BC62A3 /* LocationRequestView.xib in Resources */,
+				C09BC21B1EDD91580063875B /* LocationRequest.xib in Resources */,
+				C0B4587F1EE6CD9500A7C92E /* Map.xib in Resources */,
 				C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */,
-				C02FB06C1ECB133100BC62A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,10 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CD70211EE6C2AE00614B02 /* InsurancePlan.swift in Sources */,
-				C02FB0691ECB133100BC62A3 /* ViewController.swift in Sources */,
-				C02FB09D1EDD7C7200BC62A3 /* LocationRequestView.swift in Sources */,
 				75CD701D1EE6C13500614B02 /* Repository.swift in Sources */,
+				C0B4587E1EE6CD9500A7C92E /* Map.swift in Sources */,
+				C02FB0A01EDD82D500BC62A3 /* LocationManager.swift in Sources */,
 				C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */,
+				C09BC21A1EDD91580063875B /* LocationRequest.swift in Sources */,
 				C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */,
 				75CD701F1EE6C21A00614B02 /* Hospital.swift in Sources */,
 			);
@@ -355,14 +359,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C02FB06A1ECB133100BC62A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C02FB06B1ECB133100BC62A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
