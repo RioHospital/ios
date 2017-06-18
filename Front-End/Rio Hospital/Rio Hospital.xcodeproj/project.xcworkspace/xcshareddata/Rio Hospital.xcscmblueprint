@@ -1,5 +1,4 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AF2858A4FC996DED9585FCEF61CC8097B85C8872",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
@@ -9,12 +8,12 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BA8C43BB-435D-4110-8D6D-074F00D66AA0",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "AF2858A4FC996DED9585FCEF61CC8097B85C8872" : "rio-hospital\/",
-    "67620B5EFA902936DF04070AF595B76AB0333747" : "rio-hospital\/Front-End\/Rio%20Hospital\/Alamofire\/"
+    "AF2858A4FC996DED9585FCEF61CC8097B85C8872" : "..",
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "Rio%20Hospital\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Rio Hospital",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Front-End\/Rio Hospital\/Rio Hospital.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Rio Hospital.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
@@ -22,7 +21,7 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
     },
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RioHospital\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:RioHospital\/ios.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF2858A4FC996DED9585FCEF61CC8097B85C8872"
     }
