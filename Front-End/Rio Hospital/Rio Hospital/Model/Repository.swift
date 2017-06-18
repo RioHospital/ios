@@ -50,10 +50,10 @@ protocol Repository {
 /// Implementation of the Repository protocol
 class RepositoryImplementation: Repository {
     /// Base URL to use when making requests to the API
-    let baseURL = "https://riohospital.herokuapp.com"
+    private let baseURL = "https://riohospital.herokuapp.com"
     
     func getHospitals(callback: @escaping ([Hospital]?) -> Void) {
-        // Assynchronous HTTP request
+        // Assynchronous HTTP request using the Alamofire library
         Alamofire.request("\(baseURL)/hospitals").responseJSON { response in
             // Checks if the request was successful
             guard response.result.isSuccess else {
@@ -62,25 +62,25 @@ class RepositoryImplementation: Repository {
             }
             
             // Checks if the retrieved data is in the correct format (array of maps)
-            guard let array = response.result.value as? [[String: AnyObject]] else {
+            guard let jsonArray = response.result.value as? [[String: AnyObject]] else {
                 print("repository.getHospitals - unkown data format")
                 return callback(nil)
             }
             
-            // Creates the list of hospitals
+            // Creates the list of hospitals from the JSON data stored in jsonArray
             var hospitals = [Hospital]()
-            for map in array {
+            for jsonMap in jsonArray {
                 hospitals.append(Hospital(
-                    name: map["name"] as! String,
-                    address: map["address"] as! String,
-                    neighborhood: map["neighborhood"] as! String,
-                    postalCode: map["postalCode"] as! String,
-                    phone: map["phone"] as! String,
-                    latitude: map["latitude"] as! Double,
-                    longitude: map["longitude"] as! Double
+                    name: jsonMap["name"] as! String,
+                    address: jsonMap["address"] as! String,
+                    neighborhood: jsonMap["neighborhood"] as! String,
+                    postalCode: jsonMap["postalCode"] as! String,
+                    phone: jsonMap["phone"] as! String,
+                    latitude: jsonMap["latitude"] as! Double,
+                    longitude: jsonMap["longitude"] as! Double
                 ))
             }
-
+            
             callback(hospitals)
         }
     }
