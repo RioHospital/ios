@@ -59,16 +59,18 @@ class Hospital {
             return degrees * 3.1415 / 180
         }
         
-        let radius: Double = 6371.0 // Earth's radius in kilometers
+        let radius: Double = 6371 // Earth's radius in kilometers
         
+        // Haversine's formula
         let deltaP = (toRadians(coordinates.latitude) - toRadians(from.latitude))
         let deltaL = (toRadians(coordinates.longitude) - toRadians(from.longitude))
+        let sinDeltaP = sin(deltaP / 2) * sin(deltaP / 2)
+        let sinDeltaL = sin(deltaL / 2) * sin(deltaL / 2)
+        let cosLat = cos(toRadians(from.latitude)) * cos(toRadians(coordinates.latitude))
+        let x = sinDeltaP + cosLat * sinDeltaL
+        let distance = radius * 2 * atan2(sqrt(x), sqrt(1 - x)) // Distance in kilometers
         
-        let a = sin(deltaP/2) * sin(deltaP/2) +
-            cos(toRadians(from.latitude)) * cos(toRadians(coordinates.latitude)) *
-            sin(deltaL/2) * sin(deltaL/2)
-        
-        // Distance in kilometers
-        return radius * 2 * atan2(sqrt(a), sqrt(1-a))
+        // Rounded to two decimal places
+        return Double(String(format: "%.2f", arguments: [distance]))!
     }
 }
