@@ -22,7 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		self.window?.makeKeyAndVisible()
 		
 		// Setup initialViewController
-		self.window?.rootViewController = LocationRequest()
+		
+		if LocationManager.shared.isLocationPermissionGranted {
+			self.window?.rootViewController = Map()
+		} else {
+			self.window?.rootViewController = LocationRequest()
+		}
 		
 		return true
 	}
