@@ -50,8 +50,9 @@ class Map: UIViewController {
 	func setPins(withHospitals hospitals: [Hospital]) {
 		
 		for hospital in hospitals {
-			let annotation = MKPointAnnotation()
+			let annotation = RHAnnotation()
 			annotation.coordinate = CLLocationCoordinate2D(latitude: hospital.coordinates.latitude, longitude: hospital.coordinates.longitude)
+			annotation.hospital = hospital
 			
 			var distance = ""
 			
@@ -99,7 +100,14 @@ extension Map: MKMapViewDelegate {
 	}
 	
 	func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-		print("x")
+		
+		guard let annotation = view.annotation as? RHAnnotation, let hospital = annotation.hospital else {
+			return
+		}
+		
+		let hospitalDetail = HospitalDetail(withHospital: hospital)
+		
+		self.navigationController?.pushViewController(hospitalDetail, animated: true)
 	}
 
 }
@@ -115,4 +123,8 @@ extension Map: LocationManagerDelegate {
 		self.centerMapOnLocation(location: location)
 		LocationManager.shared.stopUpdatingLocation()
 	}
+}
+
+class RHAnnotation: MKPointAnnotation {
+	var hospital: Hospital? = nil
 }

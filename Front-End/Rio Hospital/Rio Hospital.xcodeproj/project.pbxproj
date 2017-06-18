@@ -20,6 +20,8 @@
 		C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02FB0721ECB133100BC62A3 /* LaunchScreen.storyboard */; };
 		C02FB08A1ECB133200BC62A3 /* Rio_HospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */; };
 		C02FB0A01EDD82D500BC62A3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */; };
+		C03603101EF63B480040325F /* HospitalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036030E1EF63B480040325F /* HospitalDetail.swift */; };
+		C03603111EF63B480040325F /* HospitalDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = C036030F1EF63B480040325F /* HospitalDetail.xib */; };
 		C09BC21A1EDD91580063875B /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BC2181EDD91580063875B /* LocationRequest.swift */; };
 		C09BC21B1EDD91580063875B /* LocationRequest.xib in Resources */ = {isa = PBXBuildFile; fileRef = C09BC2191EDD91580063875B /* LocationRequest.xib */; };
 		C0B4587E1EE6CD9500A7C92E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4587C1EE6CD9500A7C92E /* Map.swift */; };
@@ -130,6 +132,8 @@
 		C02FB0891ECB133200BC62A3 /* Rio_HospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rio_HospitalUITests.swift; sourceTree = "<group>"; };
 		C02FB08B1ECB133200BC62A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02FB09F1EDD82D500BC62A3 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Resources/LocationManager.swift; sourceTree = "<group>"; };
+		C036030E1EF63B480040325F /* HospitalDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HospitalDetail.swift; path = Controller/HospitalDetail.swift; sourceTree = "<group>"; };
+		C036030F1EF63B480040325F /* HospitalDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HospitalDetail.xib; path = View/HospitalDetail.xib; sourceTree = "<group>"; };
 		C09BC2181EDD91580063875B /* LocationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationRequest.swift; path = Controller/LocationRequest.swift; sourceTree = "<group>"; };
 		C09BC2191EDD91580063875B /* LocationRequest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationRequest.xib; path = View/LocationRequest.xib; sourceTree = "<group>"; };
 		C0B4587C1EE6CD9500A7C92E /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Controller/Map.swift; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 			children = (
 				C09BC2191EDD91580063875B /* LocationRequest.xib */,
 				C0B4587D1EE6CD9500A7C92E /* Map.xib */,
+				C036030F1EF63B480040325F /* HospitalDetail.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 		C02FB0991ED453AF00BC62A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C036030E1EF63B480040325F /* HospitalDetail.swift */,
 				C0B4587C1EE6CD9500A7C92E /* Map.swift */,
 				C09BC2181EDD91580063875B /* LocationRequest.swift */,
 			);
@@ -438,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02FB0741ECB133100BC62A3 /* LaunchScreen.storyboard in Resources */,
+				C03603111EF63B480040325F /* HospitalDetail.xib in Resources */,
 				C09BC21B1EDD91580063875B /* LocationRequest.xib in Resources */,
 				C0B4587F1EE6CD9500A7C92E /* Map.xib in Resources */,
 				C02FB0711ECB133100BC62A3 /* Assets.xcassets in Resources */,
@@ -471,6 +478,7 @@
 				C02FB0671ECB133100BC62A3 /* AppDelegate.swift in Sources */,
 				C09BC21A1EDD91580063875B /* LocationRequest.swift in Sources */,
 				C02FB06F1ECB133100BC62A3 /* Rio_Hospital.xcdatamodeld in Sources */,
+				C03603101EF63B480040325F /* HospitalDetail.swift in Sources */,
 				75CD701F1EE6C21A00614B02 /* Hospital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
