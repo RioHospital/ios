@@ -90,7 +90,12 @@ class LocationManager: NSObject {
 extension LocationManager: CLLocationManagerDelegate {
 	
 	public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-		self.delegate?.locationManagerDidChangeAuthorizationStatus()
+		
+		guard let location = locations.last else {
+			return
+		}
+		
+		self.delegate?.locationManager(didUpdateLocation: location)
 	}
 	
 	public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
