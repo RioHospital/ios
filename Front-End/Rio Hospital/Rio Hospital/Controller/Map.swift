@@ -13,6 +13,8 @@ class Map: UIViewController {
 
 	@IBOutlet weak var mapView: MKMapView!
 	
+	var currentLocation: CLLocation? = nil
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		LocationManager.shared.delegate = self
@@ -27,7 +29,7 @@ class Map: UIViewController {
 	// MARK: - Map
 	
 	func configureMap() {
-		//self.mapView.delegate = self
+		self.mapView.delegate = self
 		self.mapView.mapType = MKMapType.standard
 		self.mapView.showsUserLocation = true
 		self.mapView.showsCompass = true
@@ -50,8 +52,15 @@ class Map: UIViewController {
 		for hospital in hospitals {
 			let annotation = MKPointAnnotation()
 			annotation.coordinate = CLLocationCoordinate2D(latitude: hospital.coordinates.latitude, longitude: hospital.coordinates.longitude)
+			
+			var distance = ""
+			
+			if let safeCurrentLocation = self.currentLocation {
+				distance = "\(hospital.distance(from: (latitude: safeCurrentLocation.coordinate.latitude, longitude: safeCurrentLocation.coordinate.longitude)))"
+			}
+			
 			annotation.title = hospital.name
-			annotation.subtitle = "Telefone: " + hospital.phone + " - " + hospital.neighborhood
+			annotation.subtitle = "Distância: " + distance + " KM"
 			
 			self.mapView.addAnnotation(annotation)
 		}
@@ -68,6 +77,33 @@ class Map: UIViewController {
     }
 }
 
+extension Map: MKMapViewDelegate {
+	
+	func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+		
+		let annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: nil)
+		
+		annotationView.isDraggable = false
+		annotationView.canShowCallout = true
+		annotationView.pinTintColor = UIColor.blue
+		annotationView.animatesDrop = true
+		
+		let detailButton = UIButton(type: .custom)
+		detailButton.frame.size.width = 44
+		detailButton.frame.size.height = 44
+		detailButton.setImage(#imageLiteral(resourceName: "detailButton"), for: .normal)
+		
+		annotationView.rightCalloutAccessoryView = detailButton
+		
+		return annotationView
+	}
+	
+	func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+		print("x")
+	}
+
+}
+
 extension Map: LocationManagerDelegate {
 	
 	func locationManagerDidChangeAuthorizationStatus() {
@@ -75,6 +111,7 @@ extension Map: LocationManagerDelegate {
 	}
 	
 	func locationManager(didUpdateLocation location: CLLocation) {
+		self.currentLocation = location
 		self.centerMapOnLocation(location: location)
 		LocationManager.shared.stopUpdatingLocation()
 	}
