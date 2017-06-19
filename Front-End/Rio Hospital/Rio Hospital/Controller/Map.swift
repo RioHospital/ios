@@ -35,6 +35,20 @@ class Map: UIViewController {
 		self.mapView.showsCompass = true
 	}
 	
+    /**
+     
+     This function request for hospital's data to be shown as pins.
+     
+     - Precondition(s):
+     - The Map's screen is open.
+     - User's has Internet connection.
+     
+     - Postcondition(s):
+     - If the anwser is not null, call method to set pins marking
+     hospitals locations.
+     - If it's null, then it returns.
+     
+     */
 	func getHospitals() {
 		let repository = RepositoryImplementation()
 		
@@ -47,6 +61,20 @@ class Map: UIViewController {
 		}
 	}
 	
+    /**
+     
+     Set pins on map in hospitals' location.
+     
+     - Precondition(s):
+     - The parameter is not null.
+     
+     - Postcondition(s):
+     - Pins are set in map marking every hospital's location.
+     
+     - Parameters:
+     - hospitals: An array of Hospital model with all its properties.
+     
+     */
 	func setPins(withHospitals hospitals: [Hospital]) {
 		
 		for hospital in hospitals {
@@ -67,6 +95,20 @@ class Map: UIViewController {
 		}
 	}
 
+    /**
+     
+     Centrelize map on user's location.
+     
+     - Precondition(s):
+     - The location is in app's memory.
+     
+     - Postcondition(s):
+     - Pins are set in map marking every hospital's location.
+     
+     - Parameters:
+     - location: A location is passed to centrilize the map. 
+     
+     */
 	func centerMapOnLocation(location: CLLocation) {
 		let regionRadius: CLLocationDistance = 200
 		let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
