@@ -28,6 +28,7 @@ class Map: UIViewController {
 	
 	// MARK: - Map
 	
+	//Douglas
 	func configureMap() {
 		self.mapView.delegate = self
 		self.mapView.mapType = MKMapType.standard
@@ -97,7 +98,7 @@ class Map: UIViewController {
 
     /**
      
-     Centrelize map on user's location.
+     Centralize map on user's location.
      
      - Precondition(s):
      - The location is in app's memory.

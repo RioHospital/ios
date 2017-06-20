@@ -11,7 +11,9 @@ import CoreLocation
 import MapKit
 
 protocol LocationManagerDelegate {
+	//Douglas
 	func locationManagerDidChangeAuthorizationStatus()
+	//Douglas
 	func locationManager(didUpdateLocation location: CLLocation)
 }
 
@@ -79,7 +81,9 @@ class LocationManager: NSObject {
 	public func startUpdatingLocation() {
 		self.manager.startUpdatingLocation()
 	}
-
+	
+	//Douglas
+	
 	public func stopUpdatingLocation() {
 		self.manager.stopUpdatingLocation()
 	}
