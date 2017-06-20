@@ -15,7 +15,6 @@ class HospitalDetail: UIViewController {
 	
 	var hospital: Hospital
 
-	//Douglas
 	init(withHospital hospital: Hospital) {
 		self.hospital = hospital
 		super.init(nibName: "HospitalDetail", bundle: nil)
@@ -25,6 +24,19 @@ class HospitalDetail: UIViewController {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
+    /**
+     
+     Called after the view has been loaded. For view controllers 
+     created in code, this is after -loadView. For view controllers 
+     unarchived from a nib, this is after the view is set.
+     
+     - Precondition(s):
+     - HospitalDetail UIViewController is asked to be shown.
+     
+     - Postcondition(s):
+     - Labels in screen (title, phoneNumberLabel and addressLabel) are
+     initialized with values.
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
 		

@@ -45,19 +45,7 @@ extension LocationRequest: LocationManagerDelegate {
     func locationManager(didUpdateLocation location: CLLocation) {
         // TODO
     }
-	
-    /**
-     
-     This method open the Map's Screen if the user has authorized the usage
-     of his location.
-     
-     - Precondition(s):
-     - The user has authorized the use of location.
-     
-     - Postcondition(s):
-     - The app presents the Map's screen.
-     
-     */
+
 	func locationManagerDidChangeAuthorizationStatus() {
 		if LocationManager.shared.isLocationPermissionGranted {
 			

@@ -11,9 +11,37 @@ import CoreLocation
 import MapKit
 
 protocol LocationManagerDelegate {
-	//Douglas
+    
+    /**
+     
+     This method open the Map's Screen if the user has authorized the usage
+     of his location.
+     
+     - Precondition(s):
+     - The user has authorized the use of location.
+     
+     - Postcondition(s):
+     - The app presents the Map's screen.
+     
+     */
 	func locationManagerDidChangeAuthorizationStatus()
-	//Douglas
+   
+    /**
+     
+     This method set user's location in class, centralize de map in user's 
+     location and send a request to stop requesting user's location.
+     
+     - Precondition(s):
+     - The user has authorized the use of location. And the app has found it.
+     
+     - Postcondition(s):
+     - The map is centralized, location is saved and the app stop requesting
+     for user's location.
+     
+     - Prameter(s):
+     - location: The user's location already gotten before.
+     
+     */
 	func locationManager(didUpdateLocation location: CLLocation)
 }
 
@@ -82,7 +110,13 @@ class LocationManager: NSObject {
 		self.manager.startUpdatingLocation()
 	}
 	
-	//Douglas
+    /**
+    Stop the generation of updates that report the user’s current location.
+    This method returns immediately. Calling this method, the location manager will stop obtaining user's location.
+    
+    - Precondition: Location manager is updating location.
+    - Postcondition: Location manager stop updating location.
+    */
 	
 	public func stopUpdatingLocation() {
 		self.manager.stopUpdatingLocation()

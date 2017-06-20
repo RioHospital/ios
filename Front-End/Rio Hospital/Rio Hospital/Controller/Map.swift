@@ -28,7 +28,19 @@ class Map: UIViewController {
 	
 	// MARK: - Map
 	
-	//Douglas
+    /**
+     
+     This function configure Map interface. It sets mapView delegate to its own class,
+     set the type to be standard, the property so show user's location and the compass.
+     
+     - Precondition(s):
+     - The Map's screen is open.
+     - There's a mapView.
+     
+     - Postcondition(s):
+     - MapView is configured.
+     
+     */
 	func configureMap() {
 		self.mapView.delegate = self
 		self.mapView.mapType = MKMapType.standard
