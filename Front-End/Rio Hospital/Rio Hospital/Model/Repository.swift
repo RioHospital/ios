@@ -36,6 +36,13 @@ protocol Repository {
         - The callback function was called with either a nil value or a list
             of hospitals.
      
+     - Rationale: The function makes a HTTP request using the Alamofire
+        framework (this framework is widely used and known for being reliabe).
+        As the request is made, the functions checks for possible errors and
+        the retrieved data's consistency. If any error is detected, the callback
+        is called with nil. Therefore, when the callback is called at the end of
+        the function the hospital list is correct.
+     
      - Parameters:
          - callback: A callback function that receives a list of hospitals. This
             function will be called when the all the hospitals are retrieved
