@@ -138,10 +138,15 @@ extension Map: MKMapViewDelegate {
 	func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
 		
 		let annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: nil)
+				
+		if let title = annotation.title, title == "My Location" {
+			annotationView.pinTintColor = UIColor.red
+		} else {
+			annotationView.pinTintColor = UIColor.blue
+		}
 		
 		annotationView.isDraggable = false
 		annotationView.canShowCallout = true
-		annotationView.pinTintColor = UIColor.blue
 		annotationView.animatesDrop = true
 		
 		let detailButton = UIButton(type: .custom)
