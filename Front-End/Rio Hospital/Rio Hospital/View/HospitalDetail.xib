@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HospitalDetail" customModule="Rio_Hospital" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="h5O-hQ-obH" id="ect-fy-3LE"/>
+                <outlet property="phoneNumberLabel" destination="zFJ-rX-UYD" id="YQR-Oe-gcG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRg-T0-YD6">
+                    <rect key="frame" x="0.0" y="109" width="375" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRf-Kx-J8v">
+                            <rect key="frame" x="8" y="16" width="73" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+55 21 988952709" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFJ-rX-UYD">
+                            <rect key="frame" x="108" y="17" width="149" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mau-Nk-ggO">
+                            <rect key="frame" x="97" y="0.0" width="5" height="54"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="5" id="TFf-MA-VU3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Mau-Nk-ggO" firstAttribute="top" secondItem="kRg-T0-YD6" secondAttribute="top" id="PKt-O7-UUd"/>
+                        <constraint firstItem="Mau-Nk-ggO" firstAttribute="leading" secondItem="MRf-Kx-J8v" secondAttribute="trailing" constant="16" id="ShQ-aq-pMY"/>
+                        <constraint firstItem="MRf-Kx-J8v" firstAttribute="leading" secondItem="kRg-T0-YD6" secondAttribute="leading" constant="8" id="Uma-Rh-8a1"/>
+                        <constraint firstItem="MRf-Kx-J8v" firstAttribute="centerY" secondItem="kRg-T0-YD6" secondAttribute="centerY" id="ca3-25-ad4"/>
+                        <constraint firstItem="zFJ-rX-UYD" firstAttribute="centerY" secondItem="kRg-T0-YD6" secondAttribute="centerY" id="mbL-4L-01a"/>
+                        <constraint firstAttribute="bottom" secondItem="Mau-Nk-ggO" secondAttribute="bottom" id="ntf-Av-hej"/>
+                        <constraint firstItem="zFJ-rX-UYD" firstAttribute="leading" secondItem="Mau-Nk-ggO" secondAttribute="trailing" constant="6" id="rsa-to-X0J"/>
+                        <constraint firstAttribute="height" constant="54" id="z4h-ZA-RnB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b92-LS-VFP">
+                    <rect key="frame" x="0.0" y="178" width="375" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-fi-F8i">
+                            <rect key="frame" x="8" y="16" width="81" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rua José da Silva" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="h5O-hQ-obH">
+                            <rect key="frame" x="108" y="18" width="120" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Apa-nE-bOz">
+                            <rect key="frame" x="97" y="0.0" width="5" height="54"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="5" id="rcv-b6-8Bp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="h5O-hQ-obH" firstAttribute="centerY" secondItem="b92-LS-VFP" secondAttribute="centerY" id="0w7-Oi-eX8"/>
+                        <constraint firstItem="Apa-nE-bOz" firstAttribute="leading" secondItem="3vw-fi-F8i" secondAttribute="trailing" constant="8" id="7g9-zj-eXk"/>
+                        <constraint firstAttribute="height" constant="54" id="84D-Ep-KtB"/>
+                        <constraint firstItem="3vw-fi-F8i" firstAttribute="centerY" secondItem="b92-LS-VFP" secondAttribute="centerY" id="IeV-bB-41u"/>
+                        <constraint firstItem="h5O-hQ-obH" firstAttribute="leading" secondItem="Apa-nE-bOz" secondAttribute="trailing" constant="6" id="a6Q-Dk-2EB"/>
+                        <constraint firstItem="3vw-fi-F8i" firstAttribute="leading" secondItem="b92-LS-VFP" secondAttribute="leading" constant="8" id="iC8-Uv-DRA"/>
+                        <constraint firstAttribute="bottom" secondItem="Apa-nE-bOz" secondAttribute="bottom" id="q6s-J6-uVI"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h5O-hQ-obH" secondAttribute="trailing" constant="8" id="uLK-hP-ol7"/>
+                        <constraint firstItem="Apa-nE-bOz" firstAttribute="top" secondItem="b92-LS-VFP" secondAttribute="top" id="xUd-px-3aL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b92-LS-VFP" secondAttribute="trailing" id="672-3k-CmP"/>
+                <constraint firstItem="b92-LS-VFP" firstAttribute="top" secondItem="kRg-T0-YD6" secondAttribute="bottom" constant="15" id="BIZ-Cx-tXf"/>
+                <constraint firstItem="kRg-T0-YD6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="109" id="Eql-cA-pCM"/>
+                <constraint firstAttribute="trailing" secondItem="kRg-T0-YD6" secondAttribute="trailing" id="Mw5-7V-Ldk"/>
+                <constraint firstItem="b92-LS-VFP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xez-EK-2S6"/>
+                <constraint firstItem="kRg-T0-YD6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sfM-TM-xnx"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
