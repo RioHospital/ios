@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Setup initialViewController
 		
 		if LocationManager.shared.isLocationPermissionGranted {
-			self.window?.rootViewController = Map()
+            let navigationController = UINavigationController(rootViewController: Map())
+            self.window?.rootViewController = navigationController
 		} else {
 			self.window?.rootViewController = LocationRequest()
 		}
