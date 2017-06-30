@@ -48,12 +48,17 @@ class Hospital {
         - The distance between the hospital and the given coordinates was
             calculated correctly.
      
+     - Rationale: The method uses two coordinate points with the Haversine
+        formula (a known mathematical formula used to calculate the distance
+        between two coordinates in the globe). By using this formula we can
+        easely calculate the distance from the hospital and a point.
+     
      - Parameters:
         - from: A tuple of two Double typed values, the first one being
             latitude and the second one being longitude.
      
      */
-    func distance(from: (latitude: Double, longitude: Double)) -> Double {
+    func distance(from location: (latitude: Double, longitude: Double)) -> Double {
         // Auxiliary function used in the calculations
         func toRadians(_ degrees: Double) -> Double {
             return degrees * 3.1415 / 180
@@ -62,11 +67,11 @@ class Hospital {
         let radius: Double = 6371 // Earth's radius in kilometers
         
         // Haversine's formula
-        let deltaP = (toRadians(coordinates.latitude) - toRadians(from.latitude))
-        let deltaL = (toRadians(coordinates.longitude) - toRadians(from.longitude))
+        let deltaP = (toRadians(coordinates.latitude) - toRadians(location.latitude))
+        let deltaL = (toRadians(coordinates.longitude) - toRadians(location.longitude))
         let sinDeltaP = sin(deltaP / 2) * sin(deltaP / 2)
         let sinDeltaL = sin(deltaL / 2) * sin(deltaL / 2)
-        let cosLat = cos(toRadians(from.latitude)) * cos(toRadians(coordinates.latitude))
+        let cosLat = cos(toRadians(location.latitude)) * cos(toRadians(coordinates.latitude))
         let x = sinDeltaP + cosLat * sinDeltaL
         let distance = radius * 2 * atan2(sqrt(x), sqrt(1 - x)) // Distance in kilometers
         

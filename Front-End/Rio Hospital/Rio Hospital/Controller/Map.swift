@@ -145,6 +145,12 @@ extension Map: MKMapViewDelegate {
 			annotationView.pinTintColor = UIColor.blue
 		}
 		
+        if let title = annotation.title, title == "My Location" {
+            annotationView.pinTintColor = UIColor.red
+        } else {
+            annotationView.pinTintColor = UIColor.blue
+        }
+        
 		annotationView.isDraggable = false
 		annotationView.canShowCallout = true
 		annotationView.animatesDrop = true
