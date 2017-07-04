@@ -13,7 +13,9 @@ class Map: UIViewController {
 
 	@IBOutlet weak var mapView: MKMapView!
 	
+	let searchBar = UISearchBar()
 	var currentLocation: CLLocation? = nil
+	var hospitals = [Hospital]()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +25,21 @@ class Map: UIViewController {
 		self.title = "Rio Hospital"
 		
 		self.configureMap()
+		self.configureSearchBar()
 		self.getHospitals()
+	}
+	
+	func configureSearchBar() {
+		self.searchBar.delegate = self
+		self.searchBar.sizeToFit()
+		self.searchBar.placeholder =  "Digite o nome do Hospital"
+		self.navigationItem.titleView = self.searchBar
 	}
 	
 	// MARK: - Map
 	
     /**
-     
+	
      This function configure Map interface. It sets mapView delegate to its own class,
      set the type to be standard, the property so show user's location and the compass.
      
@@ -70,6 +80,7 @@ class Map: UIViewController {
 				return
 			}
 			
+			self.hospitals = safeHospitals
 			self.setPins(withHospitals: safeHospitals)
 		}
 	}
@@ -89,6 +100,8 @@ class Map: UIViewController {
      
      */
 	func setPins(withHospitals hospitals: [Hospital]) {
+		
+		self.mapView.removeAnnotations(self.mapView.annotations)
 		
 		for hospital in hospitals {
 			let annotation = RHAnnotation()
@@ -188,6 +201,23 @@ extension Map: LocationManagerDelegate {
 		self.currentLocation = location
 		self.centerMapOnLocation(location: location)
 		LocationManager.shared.stopUpdatingLocation()
+	}
+}
+
+extension Map: UISearchBarDelegate {
+	
+	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+		
+		guard !searchText.isEmpty else {
+			self.setPins(withHospitals: self.hospitals)
+			return
+		}
+		
+		let filteredHospitals = self.hospitals.filter { (hospital) -> Bool in
+			return hospital.name.lowercased().contains(searchText.lowercased())
+		}
+		
+		self.setPins(withHospitals: filteredHospitals)
 	}
 }
 
