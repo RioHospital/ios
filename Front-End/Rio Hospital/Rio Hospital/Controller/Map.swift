@@ -29,6 +29,18 @@ class Map: UIViewController {
 		self.getHospitals()
 	}
 	
+	/**
+	
+	This function configures the search bar by setting up
+	graphical properties.
+	
+	- Precondition(s):
+	- The search bar is valid.
+	
+	- Postcondition(s):
+	- The search bar is configured.
+	
+	*/
 	func configureSearchBar() {
 		self.searchBar.delegate = self
 		self.searchBar.sizeToFit()
@@ -178,8 +190,8 @@ extension Map: MKMapViewDelegate {
 		return annotationView
 	}
 	
-	func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-		
+	func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
+	             calloutAccessoryControlTapped control: UIControl) {
 		guard let annotation = view.annotation as? RHAnnotation, let hospital = annotation.hospital else {
 			return
 		}
@@ -192,10 +204,7 @@ extension Map: MKMapViewDelegate {
 }
 
 extension Map: LocationManagerDelegate {
-	
-	func locationManagerDidChangeAuthorizationStatus() {
-		
-	}
+	func locationManagerDidChangeAuthorizationStatus() {}
 	
 	func locationManager(didUpdateLocation location: CLLocation) {
 		self.currentLocation = location
@@ -205,9 +214,7 @@ extension Map: LocationManagerDelegate {
 }
 
 extension Map: UISearchBarDelegate {
-	
 	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-		
 		guard !searchText.isEmpty else {
 			self.setPins(withHospitals: self.hospitals)
 			return
